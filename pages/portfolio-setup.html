@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Presence — ODESHIE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page-setup">
+  <header class="setup-header">
+    <a href="../index.html" class="setup-header__logo">
+      <img src="../assets/logo-odeshie.png" alt="" class="setup-header__logo-img" width="40" height="40">
+      <span class="setup-header__logo-text">ODESHIE</span>
+    </a>
+    <a href="../index.html" class="setup-header__close" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </a>
+  </header>
+
+  <main class="setup-main">
+    <div class="setup-progress">
+      <span class="setup-progress__step">STEP 2 OF 4</span>
+      <h1 class="setup-progress__title">Portfolio & Presence</h1>
+      <div class="setup-progress__bar-wrap">
+        <div class="setup-progress__bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+      </div>
+      <span class="setup-progress__pct">50% Complete</span>
+    </div>
+
+    <div class="setup-card">
+      <h2 class="setup-card__heading">Showcase your craft</h2>
+      <p class="setup-card__sub">Share your best work and where collectors can find you online.</p>
+
+      <form class="setup-form" action="#" method="post">
+        <div class="setup-field">
+          <label class="setup-field__label">Portfolio images (up to 5)</label>
+          <div class="setup-upload" id="upload-area">
+            <input type="file" name="portfolio_images" id="portfolio_images" class="setup-upload__input" accept="image/jpeg,image/png" multiple>
+            <div class="setup-upload__placeholder">
+              <svg class="setup-upload__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span class="setup-upload__text">Click or drag images to upload</span>
+              <span class="setup-upload__hint">High-resolution JPEG or PNG. Max 10MB each.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-field">
+          <label class="setup-field__label" for="website_url">Website URL</label>
+          <div class="setup-input-wrap">
+            <svg class="setup-input-wrap__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <input type="url" name="website_url" id="website_url" class="setup-input" placeholder="https://yourstudio.com" autocomplete="url">
+          </div>
+        </div>
+
+        <div class="setup-field">
+          <label class="setup-field__label" for="social_link">Social media link (optional)</label>
+          <div class="setup-input-wrap">
+            <svg class="setup-input-wrap__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            <input type="url" name="social_link" id="social_link" class="setup-input" placeholder="Instagram or Behance link" autocomplete="url">
+          </div>
+        </div>
+
+        <div class="setup-actions">
+          <button type="submit" class="setup-btn setup-btn--primary">Continue to Next Step →</button>
+          <a href="profile.html" class="setup-back">Back to Profile</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="setup-footer">
+    <span class="setup-footer__item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      Secure Registration
+    </span>
+    <span class="setup-footer__item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Support
+    </span>
+  </footer>
+
+  <script>
+    document.getElementById('upload-area').addEventListener('click', function() {
+      document.getElementById('portfolio_images').click();
+    });
+    document.getElementById('portfolio_images').addEventListener('change', function(e) {
+      if (e.target.files.length) {
+        var area = document.getElementById('upload-area');
+        area.querySelector('.setup-upload__text').textContent = e.target.files.length + ' file(s) selected';
+      }
+    });
+  </script>
+</body>
+</html>

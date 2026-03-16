@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Product — ODESHIE Seller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page-add-product">
+  <header class="add-product-header">
+    <a href="../index.html" class="add-product-header__logo">ODESHIE</a>
+    <div class="add-product-header__right">
+      <a href="manage-products.html" class="add-product-header__link">Seller Dashboard</a>
+      <a href="manage-products.html" class="add-product-header__close" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="add-product-main">
+    <h1 class="add-product-title">Add New Product</h1>
+    <p class="add-product-subtitle">List your unique African craftsmanship on the global marketplace.</p>
+
+    <form class="add-product-form" action="#" method="post">
+      <div class="add-product-grid">
+        <div class="add-product-media">
+          <label class="add-product-media__label">Product Media</label>
+          <div class="add-product-media__main" id="main-photo-area">
+            <input type="file" name="main_photo" id="main_photo" class="add-product-media__input" accept="image/*">
+            <svg class="add-product-media__camera" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <span class="add-product-media__main-text">Main Photo</span>
+          </div>
+          <div class="add-product-media__thumbs">
+            <div class="add-product-media__thumb" id="thumb1">
+              <input type="file" name="photo_2" id="photo_2" class="add-product-media__input" accept="image/*">
+              <span class="add-product-media__plus">+</span>
+            </div>
+            <div class="add-product-media__thumb" id="thumb2">
+              <input type="file" name="photo_3" id="photo_3" class="add-product-media__input" accept="image/*">
+              <span class="add-product-media__plus">+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-product-details">
+          <div class="add-product-field">
+            <label class="add-product-field__label" for="product_name">Product name</label>
+            <input type="text" name="product_name" id="product_name" class="add-product-input" placeholder="e.g. Kente Weave Evening Dress">
+          </div>
+          <div class="add-product-field">
+            <label class="add-product-field__label" for="category">Category</label>
+            <div class="add-product-select-wrap">
+              <select name="category" id="category" class="add-product-select">
+                <option value="">Select a category</option>
+                <option>Dresses</option>
+                <option>Tops</option>
+                <option>Jewelry</option>
+                <option>Accessories</option>
+                <option>Footwear</option>
+                <option>Trousers</option>
+              </select>
+              <svg class="add-product-select__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+          <div class="add-product-field">
+            <label class="add-product-field__label" for="price">Price (GHC)</label>
+            <div class="add-product-price-wrap">
+              <span class="add-product-price-wrap__prefix">GHS</span>
+              <input type="number" name="price" id="price" class="add-product-input add-product-input--price" placeholder="0.00" step="0.01" min="0" value="">
+            </div>
+          </div>
+          <div class="add-product-field">
+            <label class="add-product-field__label" for="description">Description</label>
+            <textarea name="description" id="description" class="add-product-textarea" placeholder="Tell the story of your product..." rows="5"></textarea>
+          </div>
+          <div class="add-product-actions">
+            <button type="submit" class="add-product-btn add-product-btn--primary">List Product</button>
+            <button type="button" class="add-product-btn add-product-btn--secondary">Save Draft</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="add-product-tips">
+        <span class="add-product-tips__icon" aria-hidden="true">i</span>
+        <p class="add-product-tips__text"><strong class="add-product-tips__title">Selling Tips</strong> High-quality photos in natural light help sell products 3x faster. Make sure to describe the materials used in your piece.</p>
+      </div>
+    </form>
+  </main>
+
+  <footer class="add-product-footer">
+    © 2024 ODESHIE Marketplace. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('main-photo-area').addEventListener('click', function() { document.getElementById('main_photo').click(); });
+    document.getElementById('thumb1').addEventListener('click', function() { document.getElementById('photo_2').click(); });
+    document.getElementById('thumb2').addEventListener('click', function() { document.getElementById('photo_3').click(); });
+  </script>
+</body>
+</html>
