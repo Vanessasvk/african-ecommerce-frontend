@@ -1,0 +1,175 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background-color: #F8F6F6;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.left {
+  flex: 1;
+  background-color: #F8E7DB;
+  overflow: hidden;
+  height: 100%;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.right {
+  flex: 1;
+  background-color: #F8F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px; 
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 420px;
+  padding-left: 25px;
+}
+
+.icon-box {
+  border-radius: 12px;
+  margin-bottom: 10px;
+
+}
+
+.icon-box img {
+  width: 37px;
+  height: 37px;
+  display: block;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 16px;
+}
+
+.p-1 {
+  font-size: 15px;
+  color: #7E8795;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #763C20;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+}
+
+.resend-container {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+small {
+  font-size: 14px;
+  color: #7E8795;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.p-2 {
+  font-size: 15px;
+  color: #a65329;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.p-2 span {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.back-to-help{
+    text-align: center;
+}
+
+.back-to-help a {
+  color: #7E8795;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+footer {
+    width: 100%;
+    max-width: 420px;
+    padding-bottom: 20px;
+}
+
+.l {
+    height: 1px;
+    background-color: #DFE1E6;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3, footer p {
+    font-size: 11px;
+    color: #98A2B3;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .container { 
+    flex-direction: column; 
+    height: auto; 
+}
+  .left {
+     height: 350px; 
+}
+  .right {
+     min-height: 600px; 
+    padding: 40px 20px; 
+}
+}

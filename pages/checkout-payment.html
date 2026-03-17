@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/checkout-payment.css">
+    <title>Payment</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="container1">
+            <div class="header">
+                <h1>ƆDESHIE</h1>
+                <ul>
+                    <li>Shipping</li>
+                    <li>Payment</li>
+                    <li>Confirmation</li>
+                </ul>
+            </div>
+
+            <h1 class="ch1">Shipping Information</h1>
+
+            <form action="" class="sh-info">
+
+                <h2 class="ch2">Contact Details</h2>
+                <div class="cdet">
+                    <div class="fl">
+                        <div class="f">
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname" placeholder="Kwame">
+                        </div>
+                        <div class="l">
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" id="lname" placeholder="Annan">
+                        </div>
+                    </div>
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" placeholder="k.annan@example.com">
+                </div>
+
+                <h2 class="ch2">Shipping Address</h2>
+                <div class="cdet">
+                    <label for="street">STREET ADDRESS</label>
+                    <input type="text" id="street" placeholder="12 Independence Street">
+                    <div class="fl">
+                        <div class="f">
+                            <label for="city">CITY</label>
+                            <input type="text" id="city" placeholder="Accra">
+                        </div>
+                        <div class="l">
+                            <label for="postcode">POSTCODE/ZIP</label>
+                            <input type="text" id="postcode" placeholder="GA-123-4567">
+                        </div>
+                    </div>
+                    <label for="country">COUNTRY</label>
+                    <select id="country">
+                        <option value="">Select a country…</option>
+                        <option value="GH">Ghana</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="SN">Senegal</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="KE">Kenya</option>
+                        <option value="US">United States</option>
+                        <option value="GB">United Kingdom</option>
+                    </select>
+                </div>
+
+                <h2>Payment Method</h2>
+                <div class="paym">
+                    <div class="card-contain">
+                        <div class="card">
+                            <input type="radio" name="payment" id="card-radio">
+                        </div>
+                        <div class="cd-card">
+                            <h3>Credit/Debit Card</h3>
+                            <small>Visa · Mastercard</small>
+                        </div>
+                    </div>
+                    <div class="card-contain">
+                        <div class="card">
+                            <input type="radio" name="payment" id="momo-radio">
+                        </div>
+                        <div class="cd-card">
+                            <h3>Mobile Money</h3>
+                            <small>MTN · Vodafone · AirtelTigo</small>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </div>
+
+        <div class="container2">
+            <h1 class="ch1">Order Summary</h1>
+            <div class="order-sum">
+                <div class="prod">
+                    <img src="../assets/images/Untitled/Untitled (2)/Senegalese Head Beads.jpg" alt="Senegalese Head Beads">
+                    <div class="prod-info">
+                        <h3>Senegalese Head Beads</h3>
+                        <small>Traditional Ivory-style finish</small>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img src="../assets/images/Untitled/Untitled (2)/Zulu Beaded Purse.jpg" alt="Zulu Beaded Purse">
+                    <div class="prod-info">
+                        <h3>Zulu Beaded Purse</h3>
+                        <small>Hand-woven geometric pattern</small>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img src="../assets/images/Untitled/Untitled (2)/Boubou Dress.jpg" alt="Boubou Dress">
+                    <div class="prod-info">
+                        <h3>Boubou Dress</h3>
+                        <small>Luxury Silk-cotton blend</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="price-sum">
+                <div class="subtotal">
+                    <h3>Subtotal</h3>
+                    <p>Ghc 490.00</p>
+                </div>
+                <div class="shipping">
+                    <h3>Shipping</h3>
+                    <p>FREE</p>
+                </div>
+                <div class="pm-code">
+                    <input type="text" placeholder="Promo code">
+                </div>
+                <div class="line2"></div>
+                <div class="total">
+                    <h3>Total</h3>
+                    <p>inc. taxes</p>
+                </div>
+                <h1>Ghc 490.00</h1>
+            </div>
+
+            <div class="ft">
+                <p><img src="../assets/icons and buttons/Untitled (4)/Untitled (5)/Icon/lock.svg" alt=""> Secure Checkout</p>
+                <p><img src="../assets/icons and buttons/Untitled (4)/Untitled (5)/Icon/shield.svg" alt=""> Guaranteed Quality</p>
+            </div>
+
+            <button id="theme-toggle"></button>
+        </div>
+
+    </div>
+</body>
+</html>

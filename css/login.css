@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Italiana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdfcfb;
+    font-family: 'Georgia', serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.container1 {
+    flex: 1.1;
+    background-image: url("../assets/images/Untitled/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 46px 36px;
+}
+
+.container1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 18, 8, 0.55);
+}
+
+.container1 > *:not(.s1-wrapper) {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.s1-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 92px;
+    align-items: flex-end;
+}
+
+.s1 {
+    background: transparent;
+}
+
+.s1 h2 {
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+}
+
+.s1 .p1 {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.brand-name {
+    background: transparent;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.brand-quote {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.75);
+    font-style: italic;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    max-width: 280px;
+    margin: 12px auto 0;
+    text-align: center;
+}
+
+.container2 {
+    flex: 0.9;
+    background: #fdfcfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 56px 40px;
+    gap: 0;
+}
+
+.h-2 {
+    background: transparent;
+    color: #1a1208;
+    font-family: 'Italiana' ;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
+}
+
+.container2 > p:first-of-type,
+p.\\32 {
+    background: transparent;
+    color: #7a6e64;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.ema,
+.pas {
+    background: transparent;
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #1a1208;
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
+}
+
+.pas {
+    margin-top: 14px;
+}
+
+.container2 input[type="email"],
+.container2 input[type="password"] {
+    background: #ffffff;
+    width: 100%;
+    padding: 10px 14px 10px 38px;
+    border: 1px solid #ddd8d2;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #1a1208;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.container2 input[type="email"]:focus,
+.container2 input[type="password"]:focus {
+    border-color: #c8a84b;
+}
+
+.container2 input[type="email"] {
+    background: #ffffff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23aaa' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2-8 5-8-5h16zm0 12H4V9l8 5 8-5v9z'/%3E%3C/svg%3E") no-repeat 12px center;
+    background-size: 16px;
+    padding-left: 38px;
+}
+
+.container2 input[type="password"] {
+    background: #ffffff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23aaa' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a5 5 0 0 0-5 5v3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V7a5 5 0 0 0-5-5zm0 2a3 3 0 0 1 3 3v3H9V7a3 3 0 0 1 3-3zm0 10a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z'/%3E%3C/svg%3E") no-repeat 12px center;
+    background-size: 16px;
+    padding-left: 38px;
+}
+
+.rtp {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 14px 0 18px;
+}
+
+.rtp input[type="radio"] {
+    background: transparent;
+    accent-color: #c8a84b;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.rtp label {
+    background: transparent;
+    font-size: 0.8rem;
+    color: #4a3f35;
+    cursor: pointer;
+}
+
+.forgot {
+    background: transparent;
+    float: right;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #c8a84b;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.container2 button[type="submit"] {
+    background: #c8a84b;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s, transform 0.1s;
+}
+.container2 a{
+    background: transparent;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container2 button[type="submit"]:hover {
+    background: #b8963c;
+    transform: translateY(-1px);
+}
+
+.container2 button[type="submit"] img {
+    background: transparent;
+    width: 18px;
+    height: 18px;
+    filter: brightness(10);
+}
+
+.orc {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 30px 0 24px;
+    color: #2536d0;
+}
+
+.or {
+    background: transparent;
+    flex: 1;
+    height: 1px;
+    background-color: #d2d7dd;
+}
+
+.oc {
+    background: transparent;
+    font-size: 0.7rem;
+    color: #7a6e64;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+
+.G {
+    background: transparent;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.G button {
+    background: #ffffff;
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ddd8d2;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #1a1208;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.G button:hover {
+    border-color: #c8a84b;
+    background: #faf8f4;
+}
+
+.G button a {
+    background: transparent;
+    text-decoration: none;
+    color: #1a1208;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+.G button img {
+    background: transparent;
+    width: 18px;
+    height: 18px;
+}
+
+.container2 > p:last-of-type {
+    background: transparent;
+    font-size: 0.8rem;
+    color: #7a6e64;
+    text-align: center;
+}
+
+.container2 > p:last-of-type a {
+    background: transparent;
+    color: #c8a84b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.container2 > p:last-of-type a:hover {
+    text-decoration: underline;
+}
+
+.pas-row {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+.pas-row .pas {
+    background: transparent;
+    margin: 0;
+}
